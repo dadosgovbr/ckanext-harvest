@@ -10,6 +10,31 @@ and this project adheres to `Semantic Versioning <http://semver.org/>`_.
 ***********
 Unreleased_
 ***********
+Added
+-----
+- Move CKANHarvester._last_error_free_job to HarvesterBase.last_error_free_job #305
+
+Fixed
+-----
+- Fix handling of `clean_tags` options for tag lists and dicts #304
+
+*******************
+1.1.0_ - 2017-11-07
+*******************
+Added
+-----
+- Button on harvest admin page to abort running jobs #296
+
+Changed
+-------
+- Test improvements for harvester config #288
+- Use package_search API for count of datasets #298
+- Catch sqlalchemy.exc.DatabaseError instead of sqlalchemy.exc.OperationalError in `gather_callback` #301
+
+Fixed
+-------
+- Fix default_extras initialization #290
+- Travis build (postgres service, checkout of correct CKAN branch, libcommons-fileupload) #297
 
 *******************
 1.0.0_ - 2017-03-30
@@ -99,7 +124,8 @@ Categories
 - ``Fixed`` for any bug fixes.
 - ``Security`` to invite users to upgrade in case of vulnerabilities.
 
-.. _Unreleased: https://github.com/ckan/ckanext-harvest/compare/v1.0.0...HEAD
+.. _Unreleased: https://github.com/ckan/ckanext-harvest/compare/v1.1.0...HEAD
+.. _1.1.0: https://github.com/ckan/ckanext-harvest/compare/v1.0.0...v1.1.0
 .. _1.0.0: https://github.com/ckan/ckanext-harvest/compare/v0.0.5...v1.0.0
 .. _0.0.5: https://github.com/ckan/ckanext-harvest/compare/v0.0.4...v0.0.5
 .. _0.0.4: https://github.com/ckan/ckanext-harvest/compare/v0.0.3...v0.0.4
